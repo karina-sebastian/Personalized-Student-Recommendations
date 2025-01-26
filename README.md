@@ -26,6 +26,27 @@ Personalized Recommendations: Provides actionable recommendations for improvemen
 Performance Trend Graph: It shows a graphical representation of performance over recent quizzes.
 Student Persona: Automatically generates a student persona based on quiz patterns and performance.
 Responsive Web Interface: Designed for easy interaction with the student and educator.
+
+APPROACH
+
+The approach for this project will be data-driven insights that help the student improve their performance in a quiz based on their historical data in quiz history. The steps will be broken down as follows:
+
+Data Collection: The project collects quiz data, including user scores, topics, and difficulty levels, from JSON files and stores them in structured formats for easier analysis.
+
+Data Extraction and Processing: The quiz data is in a nested form, which is further processed using pandas in Python for extracting key details of the topic and the difficulty level involved in each quiz.
+
+Performance Analysis:
+
+The system analyzes the performance of the student. It identifies areas of weakness with topics and their respective difficulty levels. It further calculates the average scores for each topic and difficulty level, and flags scores below a specific threshold of 50.
+It tracks the student's recent quiz scores to visualize improvement or decline over time.
+Personalized Recommendations: The system generates tailored recommendations based on the analysis. If the student is struggling in certain areas, which could be weak topics or difficulty levels, the system suggests focusing on those areas. If the student is performing well, it highlights their strengths.
+
+Visualization: The outcome of the analysis is presented in a user-friendly format, where weak topics are shown with bullet points and the difficulty level of each topic along with a line chart representing recent performance.
+
+Web Interface: The Flask app presents a simple web interface where the user can enter his ID and view his own insights. He can also be given recommendations to improve. It is an easily accessible and interactive application.
+
+In essence, the method seeks to empower students with actionable insights, so they can focus on areas that need attention and track their progress over time.
+
 Setup Instructions
 Prerequisites
 Make sure you have the following software installed:
