@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Performance Analysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+     <!-- Heading Box -->
+     <div class="heading-box">
+        <h1>Testline - Assignment</h1>
+    </div>
+    <div class="container">
+        <h1>Quiz Performance Analysis</h1>
+        <form action="/analyze" method="POST">
+            <label for="user_id">Enter User ID:</label>
+            <input type="text" id="user_id" name="user_id" required>
+            <button type="submit">Analyze</button>
+        </form>
+    </div>
+</body>
+</html>

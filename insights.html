@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; margin: 0; padding: 0;">
+    <div style="width: 80%; margin: 0 auto; padding: 20px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+        <!-- Heading -->
+        <h1 style="text-align: center; color: #2c3e50;">Performance Insights</h1>
+
+        <!-- Student Persona -->
+        <h2 style="color:rgb(3, 51, 53);">Your Persona 🌟</h2>
+        <div style="background-color: #ecf0f1; padding: 10px; border-radius: 8px;">
+            <h3 style="color: #2c3e50;">Persona: {{ analysis.persona }}</h3>
+            <p style="color: #34495e;">{{ analysis.description }}</p>
+            <h4 style="color: #2980b9;">Performance Trend: {{ analysis.trend }}</h4>
+            <p style="color: #34495e;">{{ analysis.trend_description }}</p>
+        </div>
+
+        <!-- Weak Topics as Bullet Points -->
+        <h2 style="color: #34495e;">Weak Topics</h2>
+        {% if analysis.weak_topics %}
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                {% for topic in analysis.weak_topics %}
+                    <li style="margin: 8px 0;">{{ topic }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p style="color: #7f8c8d;">No weak topics identified.</p>
+        {% endif %}
+
+        <!-- Weak Difficulty Levels as Bullet Points -->
+        <h2 style="color: #34495e;">Weak Difficulty Levels</h2>
+        {% if analysis.weak_difficulty %}
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                {% for level in analysis.weak_difficulty %}
+                    <li style="margin: 8px 0;">{{ level }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p style="color: #7f8c8d;">No weak difficulty levels identified.</p>
+        {% endif %}
+
+        <!-- Recommendations Section -->
+        <h2 style="color: #34495e;">Recommendations</h2>
+        <ul style="padding-left: 20px;">
+            {% for recommendation in recommendations %}
+                <li style="margin: 8px 0;">{{ recommendation }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Recent Performance Trend -->
+        <h2 style="color: #34495e;">Recent Performance Trend</h2>
+        <img src="/static/trend.png" alt="Performance Trend" style="display: block; margin: 20px auto; max-width: 100%; border: 2px solid #ecf0f1; border-radius: 8px;">
+
+        <!-- Back Button -->
+        <a href="/" style="display: block; text-align: center; margin-top: 20px; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px;">Go Back</a>
+    </div>
+</body>
+</html>
