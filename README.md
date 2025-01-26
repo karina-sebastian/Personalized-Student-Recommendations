@@ -91,3 +91,10 @@ student-performance-insights/
 ![image](https://github.com/user-attachments/assets/e056829a-0fbb-45b0-9f71-c9a4bbba603b)
 
 
+![image](https://github.com/user-attachments/assets/c32244d3-425f-4dbe-9307-d74a82146c0b)
+
+
+![image](https://github.com/user-attachments/assets/6f2536b2-0391-4671-9f08-843b313cf9c2)
+
+
+
