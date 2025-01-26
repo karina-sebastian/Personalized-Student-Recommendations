@@ -87,3 +87,7 @@ student-performance-insights/
 ├── static/
 │ └── trend.png # Trend chart of performance
 └── README.md # This file
+
+![image](https://github.com/user-attachments/assets/e056829a-0fbb-45b0-9f71-c9a4bbba603b)
+
+
